@@ -1,83 +1,125 @@
-/* Basic reset */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and background styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5dc; /* Cream background */
     color: #333;
+    line-height: 1.6;
 }
 
-/* Container for each section */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-/* Header Styling */
 header {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
-    text-align: center;
-    padding: 50px 0;
+    padding: 1rem 0;
 }
 
-header h1 {
-    font-size: 2.5em;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
 }
 
-/* Section Styling */
+header nav .logo h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+header nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav .nav-links li {
+    position: relative;
+}
+
+header nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav .nav-links a:hover {
+    background-color: #575757;
+}
+
+header nav .dropdown .dropbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+header nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+header nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header nav .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+}
+
+header nav .dropdown-content a:hover {
+    background-color: #575757;
+}
+
 section {
-    margin: 40px 0;
+    padding: 2rem 2rem;
 }
 
 section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
-/* Button Styling */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+section p {
+    font-size: 1.1rem;
 }
 
-.button:hover {
-    background-color: #45a049;
+section ul {
+    list-style-type: none;
 }
 
-/* Footer Styling */
+section ul li {
+    margin: 0.5rem 0;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 1rem 0;
 }
 
-/* Social Media Links */
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-ul li a {
+footer a {
+    color: #fff;
     text-decoration: none;
-    color: #4CAF50;
-}
-
-ul li a:hover {
-    color: #45a049;
 }
